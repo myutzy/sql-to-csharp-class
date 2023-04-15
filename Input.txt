@@ -1,0 +1,6 @@
+[CustomerId] [int] NOT NULL,
+[FirstName] [nvarchar](50) NULL,
+[LastName] [nvarchar] NULL,
+[CompanyName] [nvarchar] NULL,
+[PhoneNumber] [nvarchar] NULL,
+[EmailAddress] [nvarchar] NULL
