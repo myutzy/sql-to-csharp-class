@@ -71,13 +71,13 @@ Example Input.txt contents:
 [EmailAddress] [nvarchar] NULL
 """
 
-with open('Input.txt', 'r') as file:
+with open('..\input\input.txt', 'r') as file:
     column_definitions = file.read()
 
 columns = parse_sql_create_command(column_definitions)
 csharp_class = create_csharp_class(class_name, sorted(columns))
 
-with open('Output.cs', 'w') as f:
+with open('..\output\output.cs', 'w') as f:
     f.write(csharp_class)
 
 print('Result saved to file.')
